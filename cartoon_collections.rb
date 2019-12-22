@@ -14,12 +14,14 @@ end
 
     summon_captain_planet(planeteer_calls)
    
-    short_words = ["puff", "go", "two"]
-    assorted_words = ["two", "go", "industrious", "bop"]
-
 def long_planeteer_calls(short_words)
-  
+     short_words.any? do |word|
+       word.length > 4
+     end 
 end
+
+    long_planeteer_calls(short_words)
+     long_planeteer_calls(assorted_words)
 
 def find_the_cheese# code an argument here
   # the array below is here to help
