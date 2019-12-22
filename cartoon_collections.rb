@@ -29,5 +29,5 @@ def find_the_cheese(cheese)
     cheese == "cheddar" || cheese == "gouda" || cheese == "camembert"
   end 
 end
-    
+    find_the_cheese(snacks)
     find_the_cheese(ingredients)
