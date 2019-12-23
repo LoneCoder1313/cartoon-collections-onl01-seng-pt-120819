@@ -14,8 +14,6 @@ def long_planeteer_calls(short_words)
    end 
 end 
 
-
-     
      cheese_types = ["cheddar", "gouda", "camembert"]
      snacks = ["crackers", "gouda", "thyme"]
 
