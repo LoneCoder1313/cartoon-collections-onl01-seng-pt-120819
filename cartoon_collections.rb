@@ -4,8 +4,9 @@ end
 
 
 def summon_captain_planet(array)
+   array.collect { |word| word.capitalize + "!" }
+end
  
-end 
 
 def long_planeteer_calls(short_words)
    short_words.any? do |word|
