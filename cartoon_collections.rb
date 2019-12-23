@@ -23,9 +23,9 @@ end
 summon_captain_planet(planeteer_calls)
 
 
-def long_planeteer_calls(array) 
+def long_planeteer_calls(short_words) 
   i = 0 
-  if  array.any? {|i| i.length > 4}
+  if  short_words.any? {|i| i.length > 4}
     return true
   else 
     return false
@@ -33,14 +33,13 @@ def long_planeteer_calls(array)
   end 
 end
 
-long_planeteer_calls(call_screams)
+long_planeteer_calls(short_words)
 
 
 cheese_types = ["cheddar", "gouda", "camembert"]
 snacks = ["crackers", "gouda", "thyme"]
 
 
-# This is the learn.co method that wants the cheese array inside the actual method
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
     array.find do |type|
