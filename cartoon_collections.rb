@@ -1,25 +1,16 @@
  def roll_call_dwarves(names)
   i = 0 
-  while i < names.length 
-    puts "#{i + 1}. #{names[i]}"
-    i += 1 
-  end 
+  names.each_with_index {|name, index| puts "#{index + 1}. #{name}"}
 end
-
 roll_call_dwarves(names)
 
 
-
-def summon_captain_planet(planeteer_calls)
-  i = 0 
-  while i < planeteer_calls.length 
-    summon_captain_planet(planeteer_calls) << planeteer_calls[i].capitalize + "!"
-    i += 1 
-  end 
-   planeteer_calls
+def summon_captain_planet(array)
+  planeteer_calls = []
+  array.collect do |calls|
+    planeteer_calls << "#{calls.upcase}!"
 end
-
-summon_captain_planet(planeteer_calls)
+    planeteer_calls
 
 
 def long_planeteer_calls(short_words) 
