@@ -23,7 +23,8 @@ def long_planeteer_calls(short_words)
   end 
 end
 
-long_planeteer_calls(short_words, a)
+long_planeteer_calls(short_words, assorted_words)
+    
 
 
 cheese_types = ["cheddar", "gouda", "camembert"]
